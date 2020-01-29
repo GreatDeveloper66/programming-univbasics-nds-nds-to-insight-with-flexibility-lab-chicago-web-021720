@@ -90,14 +90,15 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
-  p source
+  
   retarr = []
-  source.each do |movies|
+  source2 = source.each do |movies|
     name = movies[:name]
     movies[:movies].each do |movie|
       retarr.push({director_name: name, movies: movie})
     end
   end
+  p source2
   #puts "beg"
   #puts retarr
   #puts "end"
