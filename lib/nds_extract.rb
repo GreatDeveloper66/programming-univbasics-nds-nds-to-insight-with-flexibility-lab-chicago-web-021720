@@ -98,7 +98,7 @@ def movies_with_directors_set(source)
       retarr.push({director_name: name, movies: movie})
     end
   end
-  p source2.size
+  p source.size
   #puts "beg"
   #puts retarr
   #puts "end"
